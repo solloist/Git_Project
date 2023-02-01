@@ -1,0 +1,257 @@
+/* header */
+
+.head-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px var(--height-unit);
+  }
+
+a{text-decoration: none;}
+
+  .logo-link > img {
+    max-width: calc(var(--height-unit) * 3);
+  }
+  
+  .menu {
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+  }
+  
+  .menu-item {
+    padding: 5px;
+    margin: 5px;
+  }
+  .menu-item:last-child {
+    margin-right: 0;
+  }
+  .menu-item:first-child {
+    margin-left: 0;
+  }
+  
+  .menu-item a,
+  .menu-item span {
+    color: var(--second-color);
+  }
+  
+  .menu-item a {
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  .head-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .head-actions > div {
+    margin-right: 5px;
+  }
+  
+  .head-actions > div:last-child {
+    margin-right: 0px;
+  }
+  
+  .lang-switcher {
+    padding: 0px 5px;
+    color: var(--second-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .lang-switcher a {
+    color: var(--second-color);
+    text-decoration: none;
+  }
+  
+  .v-divider {
+    font-size: 60%;
+    margin: 0px 10px;
+    color: gray;
+    font-weight: 400;
+  }
+  
+  .cta-button {
+    background-color: var(--main-color);
+    color: var(--second-color);
+  }
+  
+  /* hero */
+  
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-image: var(--wave-bg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .section-main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--height-unit) 0px;
+  }
+  h1 {
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+  }
+  h1 span {
+    color: var(--main-color);
+  }
+  .subtitle {
+    font-size: 2rem;
+    color: var(--second-color);
+    text-align: center;
+    font-weight: 400;
+  }
+  .cta-dark-button {
+    background-color: var(--second-bgc);
+    color: var(--second-color);
+    border-color: var(--second-bgc);
+  }
+  .hero-cta-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--height-unit) 0px;
+  }
+
+  /* section-cards */
+
+  .section-cards{
+    display: grid;
+    
+  }
+
+  .section-cards-p{
+    text-align: center;
+    color: var(--main-color);
+    text-transform: uppercase;
+    padding-top: 30px;
+  }
+
+  .section-cards h2{    
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    color: white;
+  }
+
+  .cards-item-1 { grid-area: card1; }
+  .cards-item-2 { grid-area: card2; }
+  .cards-item-3 { grid-area: card3; }
+  .cards-item-4 { grid-area: card4; }
+
+  .cards{
+    display: grid;
+    grid-template: "card1 card2"
+                   "card3 card4";
+    grid-gap: 65px;
+    justify-content: space-between;
+    align-content: space-between;
+    background-color: var(--bgc);
+    padding: 20px;
+    padding-top: 40px;
+    max-width: 75vw;
+  }
+
+  .cards-item-1{
+    background-color: rgb(0, 153, 255);
+    
+  }
+
+  .cards-item-1 img{
+    max-width: auto;
+    max-height: 80%;
+    
+  }
+
+  .cards-item-2{
+    background-color: rgb(217, 29, 73);
+  }
+
+ 
+
+  .cards-item-3{
+  background-color: rgb(229, 48, 18);
+  }
+
+  .cards-item-3 img{
+    justify-items: end;
+  }
+
+  .cards-item-4{
+    background-color: rgb(0, 86, 163);
+}
+
+.cards-item{
+  display: grid;
+  max-width: 35vw;
+  max-height: 95vh;
+  border-radius: 4%;
+  grid-template-columns: auto;
+}
+
+.cards-item-p,
+.cards-item-h3  {
+  padding-left: 30px;
+  justify-content: start;
+  color: white
+}
+
+.cards-item-p{
+  padding-top: 40px;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 0.7;
+}
+
+.item2 {  grid-area: myArea;}
+.cards-btn-p { grid-area: btn-p; }
+.cards-item-btn { grid-area: item-btn; }
+
+.cards-btn {
+  display: grid;
+  justify-content: space-around;
+  grid-template-areas: '. . . . myArea';
+  
+}
+
+.item2{
+  display: grid;
+  grid-template-areas: "btn-p item-btn";
+}
+
+.cards-item-h3{
+  font-size: 2rem;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.cards-item-btn{
+  justify-items: end;
+}
+
+.cards-arrow-img{
+  border-radius: 5;
+}
+
+
+.cards-btn-p{
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: white;
+}
+
+
+
