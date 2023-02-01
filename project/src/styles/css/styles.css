@@ -128,7 +128,6 @@ a{text-decoration: none;}
 
   .section-cards{
     display: grid;
-    
   }
 
   .section-cards-p{
@@ -168,25 +167,15 @@ a{text-decoration: none;}
     
   }
 
-  .cards-item-1 img{
-    max-width: auto;
-    max-height: 80%;
-    
-  }
-
+  
   .cards-item-2{
     background-color: rgb(217, 29, 73);
   }
-
- 
 
   .cards-item-3{
   background-color: rgb(229, 48, 18);
   }
 
-  .cards-item-3 img{
-    justify-items: end;
-  }
 
   .cards-item-4{
     background-color: rgb(0, 86, 163);
@@ -198,6 +187,7 @@ a{text-decoration: none;}
   max-height: 95vh;
   border-radius: 4%;
   grid-template-columns: auto;
+  position: absolute;
 }
 
 .cards-item-p,
@@ -220,30 +210,14 @@ a{text-decoration: none;}
 .cards-btn-p { grid-area: btn-p; }
 .cards-item-btn { grid-area: item-btn; }
 
-.cards-btn {
-  display: grid;
-  justify-content: space-around;
-  grid-template-areas: '. . . . myArea';
-  
-}
-
-.item2{
-  display: grid;
-  grid-template-areas: "btn-p item-btn";
-}
-
 .cards-item-h3{
   font-size: 2rem;
   font-weight: 500;
   opacity: 0.9;
 }
 
-.cards-item-btn{
-  justify-items: end;
-}
-
 .cards-arrow-img{
-  border-radius: 5;
+  border-radius: 5px;
 }
 
 
